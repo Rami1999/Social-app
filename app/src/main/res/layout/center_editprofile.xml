@@ -1,0 +1,212 @@
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/profile_photo3"
+            android:layout_marginTop="20dp"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="0dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Photo"
+            android:id="@+id/changeProfilePhoto"
+            android:layout_below="@+id/profile_photo3"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/blue"
+            android:textSize="16sp" />
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/changeProfilePhoto"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/white_grey_border_bottom"
+            android:id="@+id/relLayout1">
+
+            <TextView
+                android:id="@+id/taxeNameProil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:text="Name"
+                android:textColor="@color/grey2"
+                android:textSize="16sp"
+                />
+
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/display_name"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:inputType="textNoSuggestions"
+                android:hint="Name"
+                android:layout_below="@+id/taxeNameProil"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/relLayout1"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/white_grey_border_bottom"
+            android:id="@+id/relLayout2"
+
+            >
+
+            <TextView
+                android:id="@+id/taxeuserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:text="User Name"
+                android:textColor="@color/grey2"
+                android:textSize="16sp"
+
+                />
+
+            />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/username"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:inputType="textNoSuggestions"
+                android:hint="userName"
+                android:layout_below="@+id/taxeuserName"
+                android:textColor="@color/black"
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/relLayout2"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/white_grey_border_bottom"
+            android:id="@+id/relLayout3"
+
+            >
+
+            <TextView
+                android:id="@+id/Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:text="Description"
+                android:textColor="@color/grey2"
+                android:textSize="16sp"
+                />
+
+            />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/description"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:inputType="textNoSuggestions"
+                android:hint="description"
+                android:layout_below="@+id/Description"
+                android:textColor="@color/black"
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/relLayout3"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/white_grey_border_bottom"
+            android:id="@+id/relLayout4"
+
+            >
+
+            <TextView
+                android:id="@+id/Website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:text="Website"
+                android:textColor="@color/grey2"
+                android:textSize="16sp"
+                />
+
+            />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/website"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:inputType="textNoSuggestions"
+                android:hint="website"
+                android:layout_below="@+id/Website"
+                android:textColor="@color/black"
+
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</merge>

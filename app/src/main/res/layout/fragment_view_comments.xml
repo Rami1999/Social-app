@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relLayout1">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/white_grey_border_bottom"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/profileToolBar">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/backArrow"
+                        android:src="@drawable/back"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comments"
+                        android:layout_toRightOf="@+id/backArrow"
+                        android:layout_marginRight="15dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/tvNext"
+                        />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relLayout2"
+        android:layout_below="@+id/relLayout1"
+        android:layout_marginBottom="45dp"
+        android:background="@color/white">
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView"
+            android:background="@color/white">
+
+        </ListView>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/mmmmm"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/white_grey_border_bottom3">
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:id="@+id/image_comments"
+            android:src="@drawable/image_plus"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+             />
+
+    <RelativeLayout
+        android:layout_below="@+id/mmmmm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/relLayout3"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/image_comments"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/white"
+        >
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:background="@drawable/white_grey_border_bottom2"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:hint=" Add a comment..."
+            android:textSize="14sp"
+            android:id="@+id/comment"
+            android:textColor="@color/black"
+            android:textColorLink="@color/black"
+            />
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mes_comment"
+            android:id="@+id/ivPostComment3"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+

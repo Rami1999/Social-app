@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <TextView
+       android:id="@+id/textView4"
+       android:layout_width="match_parent"
+       android:layout_height="75dp"
+       android:layout_gravity="center_horizontal"
+       android:layout_marginBottom="2dp"
+       android:layout_marginStart="15dp"
+       android:text="Sign Out from "
+       android:textColor="@color/black"
+       android:textSize="20sp"
+        android:layout_marginTop="70dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ggggg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:id="@+id/tvConfirmSignout"
+            android:text="Are you sure you want to sign out?"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:id="@+id/btnConfirmSignout"
+            android:layout_below="@+id/tvConfirmSignout"
+            android:background="@drawable/login_button"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="25dp"
+            />
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/progressBar"
+        android:layout_below="@+id/ggggg"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please wait..."
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvSigningOut"/>
+
+</RelativeLayout>
